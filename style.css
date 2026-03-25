@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(45deg, orange, red);
+  padding: 20px;
+}
+
+/* Estilo aprimorado da Navegação */
+nav {
+  background: #222;
+  padding: 15px;
+  border-bottom: 3px solid orange; /* Linha de destaque abaixo do menu */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Efeito quando passa o mouse */
+nav a:hover {
+  color: white;
+  background: rgba(255, 165, 0, 0.2); /* Fundo laranja transparente */
+}
+
+/* Destaque para a PÁGINA ATIVA */
+nav a.ativo {
+  color: orange;
+  border-bottom: 2px solid orange;
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+.hero {
+  padding: 60px;
+}
+
+.produtos {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  overflow-x: auto; /* 👈 ativa o scroll lateral */
+  scroll-behavior: smooth;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+   min-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  
+  border: 2px solid yellow;
+}
+
+button {
+  background: orange;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: red;
+}
+
+.redes {
+  margin-top: 40px;
+}
+
+.btn-social {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, orange, red);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-social:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px orange;
+}
+
+.historia img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#contador {
+    display: block;
+    transition: transform 0.2s;
+    cursor: default;
+    user-select: none; /* Evita que o usuário selecione o texto sem querer */
+}
+
+
+.rosa {
+  width: 102%;
+  height: 470px; /* 👈 AQUI TU AUMENTA MAIS */
+  object-fit: cover;
+}
+
+.rosa {
+  height: 420px; /* testa 180, 190, 210... */
+}
+
+.black {
+  width: 60%;
+  height: 420px; /* 👈 AQUI TU AUMENTA MAIS */
+}
+
+/* 📱 CELULAR */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .produtos {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 80%;
+    min-width: 80%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .historia {
+    padding: 20px;
+  }
+
+  .historia img {
+    width: 150px;
+  }
+
+  .btn-social {
+    width: 80%;
+    justify-content: center;
+  }
+}
